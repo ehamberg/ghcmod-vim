@@ -68,6 +68,9 @@ function! ghcmod#parse_make(lines, basedir) "{{{
   " See also :help readfile() and :help NL-used-for-Nul.
   let l:qflist = []
   for l:output in a:lines
+    if exists("g:ghcmod_ignore_pattern") && match(l:output, g:ghcmod_ignore_pattern)
+      continue
+    endif
     let l:qf = {}
     let l:m = matchlist(l:output, '^\(\f\+\):\(\d\+\):\(\d\+\):\s*\(.*\)$')
     if len(l:m) < 4

@@ -52,6 +52,17 @@ function! s:add_xmonad_path()
 endfunction
 ```
 
+To completely ignore certain messages from ghc-mod, put a pattern matching the
+message(s) in `g:ghcmod_ignore_pattern`:
+
+```vim
+let g:ghcmod_ignore_pattern = "The function `main'' is not defined"
+```
+
+Note that most warnings can be turned off by passing the correct flags to
+`ghcmod_ghc_options`. To ignore several patterns, separate the patterns by `\|`
+(see `:help \bar`).
+
 ### :GhcModType, :GhcModTypeClear
 Type `:GhcModType` on a expression, then the sub-expression is highlighted and its type is echoed.
 If you type `:GhcModType` multiple times, the sub-expression changes.
