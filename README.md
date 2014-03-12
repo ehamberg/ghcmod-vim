@@ -1,5 +1,6 @@
 # ghcmod.vim
 [![Build Status](https://travis-ci.org/eagletmt/ghcmod-vim.png)](https://travis-ci.org/eagletmt/ghcmod-vim)
+[![Gitter chat](https://badges.gitter.im/eagletmt/ghcmod-vim.png)](https://gitter.im/eagletmt/ghcmod-vim)
 
 Happy Haskell programming on Vim, powered by [ghc-mod](https://github.com/kazu-yamamoto/ghc-mod)
 
@@ -13,7 +14,7 @@ Happy Haskell programming on Vim, powered by [ghc-mod](https://github.com/kazu-y
 - Displaying the expansion of splices (`ghc-mod expand`)
 
 Completions are supported by another plugin.
-See [neco-ghc](https://github.com/ujihisa/neco-ghc) .
+See [neco-ghc](https://github.com/eagletmt/neco-ghc) .
 
 ## Requirements
 
